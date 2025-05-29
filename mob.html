@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Bakes</title>
+  <link rel="stylesheet" href="./CSS/custom.css" />
+  <link rel="stylesheet" href="./CSS/bootstrap.css" />
+</head>
+
+<!-- Extra Small (portrait phones, less than 576px), 
+Small (landscape phones, 576px and up), Medium (tablets, 768px and up), 
+Large (desktops, 992px and up), and Extra Large (large desktops, 1200px and up) -->
+
+<body>
+  <!-- Navbar for screens Mobile and Tab -->
+  <nav class="navbar navbar-expand-lg  d-lg-none" style="background-color: cadetblue;">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Delivery Info & Location -->
+      <div class="d-flex flex-column align-items-start custom-location-box">
+        <label for="locationBox" class="fw-bold mb-1">
+          <b>Fast Delivery</b>
+        </label>
+      </div>
+
+      <!-- Account Icon -->
+      <a class="nav-link d-flex align-items-center" href="#">
+        <i class="bi bi-person-circle fs-4"></i>
+      </a>
+    </div>
+    <div style="width: 100%">
+      <input type="text" id="locationBox" class="form-control border-0 bg-transparent"
+        placeholder="Click to detect location" readonly style="outline: none; box-shadow: none" />
+      <div id="popup" class="position-absolute bg-white border p-3 shadow d-none"
+        style="z-index: 1050; min-width: 200px; top: 0; left: 0">
+        <p id="popupText" class="mb-2">
+          Do you want to detect your current location?
+        </p>
+        <button id="detectButton" class="btn btn-primary btn-sm">
+          Detect Location
+        </button>
+      </div>
+    </div>
+    <div class="col-12 d-flex flex-wrap">
+      <!-- Search Bar on New Line -->
+      <div class="flex-grow-1 mx-2">
+        <div class="input-group">
+          <span class="input-group-text custom-search-icon" id="search-icon">
+            <i class="bi bi-search"></i>
+          </span>
+          <input type="text" class="form-control custom-search-bar py-2" placeholder="Search..." aria-label="Search"
+            aria-describedby="search-icon">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content for screens wider than Laptop -->
+  <div class="d-none d-lg-block w-100">
+    <!-- Your existing layout -->
+    <div style="border-bottom: 1px solid #cccccc">
+      <div class="container-fluid">
+        <section>
+          <div class="row flex-wrap">
+            <div class="col-12 d-flex flex-wrap align-items-center">
+              <!-- Logo -->
+              <div><img src="./IMAGES/dailyBikes.png" alt="" class="logo mx-2" /></div>
+
+              <!-- Delivery Info -->
+              <div class="d-flex flex-column justify-content-center align-items-center mx-2">
+                <label for="" class="fw-bolder">
+                  <b>Fast Delivery</b>
+                </label>
+                <div class="position-relative d-flex align-items-center">
+                  <input type="text" id="locationBoxLarge"
+                    class="form-control border-0 text-truncate bg-transparent w-100"
+                    placeholder="Click to detect location" readonly
+                    style="outline: none; box-shadow: none; width: 190px" />
+                  <i class="bi bi-caret-down-fill"></i>
+                </div>
+
+              </div>
+
+              <!-- Search Bar -->
+              <div class="flex-grow-1 mx-4">
+                <div class="input-group">
+                  <span class="input-group-text custom-search-icon" id="search-icon">
+                    <i class="bi bi-search"></i>
+                  </span>
+                  <input type="text" class="form-control custom-search-bar py-2" placeholder="Search..."
+                    aria-label="Search" aria-describedby="search-icon" />
+                </div>
+              </div>
+
+              <!-- Buttons -->
+              <button class="btn btn-white border-0 text-muted mx-2 px-4 py-2 fs-5">
+                Login
+              </button>
+              <button
+                class="btn btn-success border text-white mx-2 px-2 py-2 fw-bolder d-flex align-items-center justify-content-center gap-2">
+                <img id="cart-icon" src="./IMAGES/shopping-cart.png" alt="Cart Icon"
+                  style="width: 20px; height: 20px" />
+                My Cart
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="container p-4">
+    <div class="row" style="height: 235px; border-radius: 25px; background-color:rgb(95, 160, 133);">
+
+    </div>
+  </div>
+  <div class=" container d-flex">
+    <div class="me-2" style="width: 35%; height: 235px; border-radius: 25px; background-color:rgb(255, 150, 80);">
+    </div>
+    <div class="me-2" style="width: 35%; height: 235px; border-radius: 25px; background-color: rgb(255, 233, 34);">
+    </div>
+  </div>
+  <div class="container">
+    <h4 class="title my-4">Order our best food options</h4>
+  </div>
+
+    <div class=" container d-flex">
+    <div class="me-2" style="width: 35%; height: 235px; border-radius: 25px; background-color:rgb(255, 150, 80);">
+    </div>
+    <div class="me-2" style="width: 35%; height: 235px; border-radius: 25px; background-color: rgb(255, 233, 34);">
+    </div>
+  </div>
+  <div class="container">
+    <h4 class="title my-4">Order our best food options</h4>
+  </div>
+
+    <div class=" container d-flex">
+    <div class="me-2" style="width: 35%; height: 235px; border-radius: 25px; background-color:rgb(255, 150, 80);">
+    </div>
+    <div class="me-2" style="width: 35%; height: 235px; border-radius: 25px; background-color: rgb(255, 233, 34);">
+    </div>
+  </div>
+  <div class="container">
+    <h4 class="title my-4">Order our best food options</h4>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./JS/script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+
+</html>
